@@ -1,27 +1,140 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* styles/Navbar.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+.font-title {
+  font-family: "Poppins", sans-serif;
+}
+.font-subtitle {
+  font-family: "lato", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1rem;
+  color: #fff;
+  height: 80px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.navbarbrand {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.navbarlogo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.navbartoggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbarlinks {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbaritem {
+  margin-left: 1rem;
+  border-radius: 9px;
+}
+
+.navbarlink {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+@media only screen and (max-width: 860px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    height: 100px;
+  }
+  .navbarbrand {
+    margin-left: 0px;
+  }
+  .navbaritem {
+    margin-left: 0rem;
+    border-radius: 9px;
+  }
+  .navbarlink {
+    /* padding-left: 0; */
+    padding: 5px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Media Query for responsive navigation */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .navbarbrand {
+    margin-left: 0px;
+  }
+  .navbarlinks {
+    display: block;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
+    background-color: #ee0909;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 20%;
+    opacity: 1;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbarlinks.active {
+    transform: translateY(0);
+    margin-top: 60px;
+  }
+
+  .navbaritem {
+    margin-top: 0px;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 0px;
+  }
+
+  .navbartoggle {
+    display: block;
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+}
+.banner-content {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.banner-animate .banner-content {
+  opacity: 1;
+  transform: translateX(0);
 }

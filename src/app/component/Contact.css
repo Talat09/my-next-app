@@ -1,0 +1,10 @@
+.contact-content {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.contact-animate .contact-content {
+  opacity: 1;
+  transform: translateX(0);
+}
