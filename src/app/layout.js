@@ -7,10 +7,10 @@ import "./globals.css";
 
 // const inter = Inter({ subsets: ["latin", "Poppins"] });
 
-export const metadata = {
-  title: "Talat Mahmud Portfolio",
-  description: "Next-Js-APP",
-};
+// export const metadata = {
+//   title: "Talat Mahmud Portfolio",
+//   description: "Next-Js-APP",
+// };
 
 export default function RootLayout({ children }) {
   const [loading, setLoading] = useState(true);
