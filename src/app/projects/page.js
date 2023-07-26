@@ -1,9 +1,10 @@
 import React from "react";
+import HomeProjects from "../component/HomeProjects";
 
 const Projects = () => {
   return (
     <div>
-      <h1>This is Projects</h1>
+      <HomeProjects></HomeProjects>
     </div>
   );
 };

@@ -1,0 +1,11 @@
+/* ProjectList.css */
+.project-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.project-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
