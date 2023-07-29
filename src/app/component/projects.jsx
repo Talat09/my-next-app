@@ -93,7 +93,7 @@ const projects = [
     category: "React",
   },
   {
-    id: 8,
+    id: 9,
     picture: "https://i.ibb.co/SXjX8XN/bizdata.png",
     name: "Bizdata-Tech",
     Live_Link: "https://bizdata-tech.netlify.app/",
