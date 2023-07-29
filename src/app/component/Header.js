@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <section className="bg-black">
       <nav className="navbar max-w-[1280px] mx-auto">
-        <div className="navbarbrand">
+        <div className="navbarbrand flex justify-center items-center">
           <Link href="/" className="">
             <p className="text-2xl md:text-2xl lg:text-4xl font-bold">
               Talat <span className="text-[#E62828]">Mahmud</span>

@@ -38,6 +38,15 @@ const projects = [
   },
   {
     id: 4,
+    picture: "https://i.ibb.co/CBkW1J4/instacity.png",
+    name: "Insta-City",
+    Live_Link: "https://chattagram.netlify.app/",
+    description: "This is a Instagram like Social media",
+    languages: ["HTML", "CSS", "Javascript"],
+    category: "JavaScript",
+  },
+  {
+    id: 5,
     picture: "https://i.ibb.co/hMwLXTR/bikectg.png",
     name: "Bike CTG Warehouse",
     Live_Link: "https://bike-store-20173.web.app/",
@@ -47,7 +56,7 @@ const projects = [
     category: "React",
   },
   {
-    id: 5,
+    id: 6,
     picture: "https://i.ibb.co/cQmnpJr/meal-finlendo.png",
     name: "Meal Filendo",
     Live_Link: "https://meal-filendo-food.netlify.app/",
@@ -57,7 +66,7 @@ const projects = [
     category: "JavaScript",
   },
   {
-    id: 6,
+    id: 7,
     picture: "https://i.ibb.co/NWr8fh0/ema-jhon.png",
     name: "Ema-jhon",
     Live_Link: "https://ema-john-auth-a619c.web.app/",
@@ -67,7 +76,7 @@ const projects = [
     category: "React",
   },
   {
-    id: 7,
+    id: 8,
     picture: "https://i.ibb.co/zxh50K9/jarins-parlour.png",
     name: "Jarin's Parlour",
     Live_Link: "https://jarin-portal.web.app/",

@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
       setLoading(false);
     }, 2000); // Adjust the time according to your needs
   }, []);
+
   return (
     <html lang="en">
       <body className="bg-black">
