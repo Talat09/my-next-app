@@ -92,5 +92,15 @@ const projects = [
     ],
     category: "React",
   },
+  {
+    id: 8,
+    picture: "https://i.ibb.co/SXjX8XN/bizdata.png",
+    name: "Bizdata-Tech",
+    Live_Link: "https://bizdata-tech.netlify.app/",
+    description:
+      "Bizdata React Js Application where customer see about  their services and knowing about their products.Here i used react js,tailwind css etc.",
+    languages: ["React", "TailwindCss"],
+    category: "React",
+  },
 ];
 export default projects;
