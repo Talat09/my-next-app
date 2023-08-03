@@ -49,10 +49,10 @@ const Banner = () => {
             <div className="avatar">
               <div className="w-full rounded-full ">
                 <Image
-                  src="/cover.png"
+                  src="/profile-pic.png"
                   alt="Cover Image"
                   className=" rounded-full "
-                  width={600}
+                  width={500}
                   height={500}
                   priority
                 />
